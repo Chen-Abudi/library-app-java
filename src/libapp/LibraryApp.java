@@ -37,10 +37,17 @@ public class LibraryApp {
         Book book = bookRepo.findByIsbn(isbn);
 
         if (book != null) {
-            book.checkOut();
-            System.out.println("Book checked out successfully:");
-            System.out.printf("\tISBN: %s\n\tTitle: %s\n\tAuthor: %s\n",
-                    book.getIsbn(), book.getTitle(), book.getAuthor());
+            if (book.checkOut()) {
+                System.out.println("Check out SUCCESSFUL: ");
+                System.out.printf("\tISBN: %s\n\tTitle: %s\n\tAuthor: %s\n",
+                        book.getIsbn(), book.getTitle(), book.getAuthor());
+            }
+            else {
+                System.out.println("Check out FAILED: ");
+                System.out.printf("\tISBN: %s\n\tTitle: %s\n\tAuthor: %s\n",
+                        book.getIsbn(), book.getTitle(), book.getAuthor());
+                System.out.println("Reason: More books checked out than recorded quantity.");
+            }
         }
         else {
             System.out.println("Failed to check out book.\n");

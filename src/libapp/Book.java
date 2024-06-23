@@ -48,11 +48,21 @@ public class Book {
         return numCheckedOut;
     }
 
-    public void checkOut() {
+    public boolean checkOut() {
+        if (numCheckedOut >= quantity) {
+            return false;
+        }
+
         numCheckedOut++;
+        return true;
     }
 
-    public void checkIn() {
+    public boolean checkIn() {
+        if (numCheckedOut <= 0) {
+            return false;
+        }
+
         numCheckedOut--;
+        return true;
     }
 }
