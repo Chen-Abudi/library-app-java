@@ -184,6 +184,7 @@ cd libapp
 **```2.```** **Search for Books by ISBN:**
   - The **LibraryApp** instance allows you to search for books by their ISBN.
   - Call the **searchByIsbn(String isbn)** method with the desired ISBN.
+
     ***Example:***
 ```bash
 
@@ -194,6 +195,7 @@ app.searchByIsbn("83471");
 **```3.```** **Search for Books by Title:**
   - You can also search for books by a keyword in their title.
   - Call the **searchByTitle(String keyword)** method with the desired keyword.
+
     ***Example:***
 ```bash
 
@@ -203,6 +205,7 @@ app.searchByTitle("Castle");
 
 **```4.```** **Check Out a Book:**
   - To check out a book, call the **checkOutBook(String isbn)** method with the book's ISBN.
+
     ***Example:***
 ```bash
 
@@ -212,6 +215,7 @@ app.checkOutBook("83471");
 
 **```5.```** **Check In a Book:**
   - To check in a book, call the **checkInBook(String isbn)** method with the book's ISBN.
+
     ***Example:***
 ```bash
 
