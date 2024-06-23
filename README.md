@@ -13,6 +13,9 @@
       - [🔄 Interactions:](#-interactions)
       - [📚 Inclusion Summary:](#-inclusion-summary)
     - [✨ How to Get Started:](#-how-to-get-started)
+      - [Prerequisites:](#prerequisites)
+      - [🚀 Setup Instructions:](#-setup-instructions)
+      - [🎮 Usage:](#-usage)
 
 ---
 
@@ -135,7 +138,7 @@ searching by other criteria, or integrating with a database instead of a static 
 
 # ✨ How to Get Started:
 
-**```Prerequisites:```**
+### **```Prerequisites:```**
 
 Ensure you have the following installed on your system:
 
