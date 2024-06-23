@@ -142,7 +142,7 @@ searching by other criteria, or integrating with a database instead of a static 
 
 Ensure you have the following installed on your system:
 
-  - [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/downloads/#java11)
+  - [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/downloads/#java11) (version 11 or higher)
   - An Integrated Development Environment (IDE) such as [IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=mac) 
     or [Eclipse](https://www.eclipse.org/)
 
