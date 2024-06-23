@@ -3,8 +3,9 @@ package libapp;
 public class Main {
     public static void main(String[] args) {
         LibraryApp app = new LibraryApp();
-        app.searchByTitle("castle");
-        app.searchByTitle("night");
-        app.searchByTitle("dagger");
+        app.checkOutBook("06917");
+        app.checkOutBook("72391");
+
+        app.checkInBook("39662");
     }
 }
