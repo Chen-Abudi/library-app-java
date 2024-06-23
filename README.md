@@ -166,11 +166,11 @@ cd libapp
 ```
 
 **```3.```** **Open the Project in Your IDE:**
-  - Open your IDE and select the "Open Project" option.
+  - Open your IDE and select the **"Open Project"** option.
   - Navigate to the **libapp** directory and open it.
 
 **```4.```** **Build the Project:**
-  - Ensure that your IDE recognizes the project as a Java project.
+  - **Ensure** that your IDE recognizes the project as a Java project.
   - Build the project to ensure all dependencies and configurations are correctly set up.
 
 ---
@@ -193,7 +193,7 @@ app.searchByIsbn("83471");
 ```
 
 **```3.```** **Search for Books by Title:**
-  - You can also search for books by a keyword in their title.
+  - You can also search for books by a **keyword** in their title.
   - Call the **searchByTitle(String keyword)** method with the desired keyword.
 
     ***Example:***
