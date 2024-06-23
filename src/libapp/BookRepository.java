@@ -9,6 +9,10 @@ public class BookRepository {
         books.add(new Book("83471", "The Dead of Night", "Horror", null, "S.K. Eleton"));
         books.add(new Book("25274", "Castles and Crenellations", "Historical", null, "H.P. Anderson"));
         books.add(new Book("51573", "The Knight's Sword", "Fantasy", null, "F.E. Anvil"));
+        books.add(new Book("39662", "Time of Night", "Romance", null, "A.U. Ring"));
+        books.add(new Book("40831", "Castle Siege", "Historical", null, "N.N. Blacksmith"));
+        books.add(new Book("61522", "Night and Day", "Mystery", null, "Q.Z. Bizar"));
+        books.add(new Book("06917", "Never Time", "Thriller", null, "P.B. Jelliton"));
     }
 
     public Book findByIsbn(String isbn) {
@@ -18,5 +22,16 @@ public class BookRepository {
             }
         }
         return null;
+    }
+
+    public ArrayList<Book> findByTitle(String keyword) {
+        ArrayList<Book> foundBooks = new ArrayList<>();
+
+        for (Book book : books) {
+            if (book.getTitle().toLowerCase().contains(keyword.toLowerCase())) {
+                foundBooks.add(book);
+            }
+        }
+        return foundBooks;
     }
 }
