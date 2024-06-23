@@ -1,12 +1,12 @@
 package libapp;
 
 public class Book {
-    private String isbn;
-    private String title;
-    private String genre;
-    private String description;
-    private String author;
-    private int quantity;
+    private final String isbn;
+    private final String title;
+    private final String genre;
+    private final String description;
+    private final String author;
+    private final int quantity;
     private int numCheckedOut;
 
     public Book(String isbn, String title, String genre, String description, String author,

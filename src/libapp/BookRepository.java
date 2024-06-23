@@ -3,7 +3,7 @@ package libapp;
 import java.util.ArrayList;
 
 public class BookRepository {
-    private ArrayList<Book> books = new ArrayList<>();
+    private final ArrayList<Book> books = new ArrayList<>();
 
     public BookRepository() {
         books.add(new Book("83471", "The Dead of Night", "Horror", null, "S.K. Eleton", 10, 7));

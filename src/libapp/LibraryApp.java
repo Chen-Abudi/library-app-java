@@ -3,7 +3,7 @@ package libapp;
 import java.util.ArrayList;
 
 public class LibraryApp {
-    private BookRepository bookRepo = new BookRepository();
+    private final BookRepository bookRepo = new BookRepository();
 
     public void searchByIsbn(String isbn) {
         System.out.printf("Searching for books with ISBN %s.\n", isbn);
